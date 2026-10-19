@@ -1,0 +1,12 @@
+{
+  "model_name": "LogisticRegression",
+  "selected_metric": "test_roc_auc",
+  "test_roc_auc": 0.9675324675324676,
+  "test_accuracy": 0.8852459016393442,
+  "test_recall": 0.9285714285714286,
+  "created_at": "2026-10-19T21:28:40.241913Z",
+  "pipeline_steps": [
+    "preprocessor",
+    "classifier"
+  ]
+}

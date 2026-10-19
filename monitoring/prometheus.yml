@@ -1,0 +1,16 @@
+global:
+  scrape_interval: 5s
+  evaluation_interval: 5s
+
+scrape_configs:
+  - job_name: "heart_disease_api"
+    metrics_path: "/metrics"
+    static_configs:
+      - targets: ["heart-disease-api:8000"]
+        labels:
+          app: "heart-disease-serving"
+          environment: "production"
+
+  - job_name: "prometheus"
+    static_configs:
+      - targets: ["localhost:9090"]
